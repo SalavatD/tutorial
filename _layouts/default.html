@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ page.internationalization.lang }}">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="https://github.githubassets.com/images/icons/emoji/unicode/1f468-1f4bb.png">
+    <link rel="stylesheet" type="text/css" href="/fonts/serif/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <title>{{ page.internationalization.name }} | {{ page.title }}</title>
+  </head>
+  <body class="white-theme">
+    <div class="header no-print">
+      <h1 class="margin-left margin-right">{{ page.title }}</h1>
+    </div>
+    <div class="content">
+      <div class="left-bar no-print">
+      </div>
+      <div class="main">
+        {{ content }}
+      </div>
+      <div class="right-bar no-print">
+        <div class="menu margin-left margin-right">
+          <h3>{{ page.internationalization.menu.title }}</h3>
+          <button class="button-toggle-mode to-white hidden">{{ page.internationalization.menu.white }}</button>
+          <button class="button-toggle-mode to-dark">{{ page.internationalization.menu.dark }}</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer no-print">
+      <p class="copyright">2022 Designed by Salavat Dautov. Tutorial from site <a href="http://iguania.ru">iguania.ru</a>.</p>
+    </div>
+    <script type="text/javascript" src="/assets/main.js"></script>
+    <script>hljs.highlightAll();</script>
+  </body>
+</html>
